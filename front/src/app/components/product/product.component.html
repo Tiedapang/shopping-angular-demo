@@ -1,0 +1,28 @@
+<nz-modal [nzVisible]="isVisible" nzTitle='{{title}}商品信息' (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+    <form nz-form [formGroup]="updateProduct" (ngSubmit)="submitForm()">
+        <nz-form-item>
+            <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="name">名称</nz-form-label>
+            <nz-form-control [nzSm]="14" [nzXs]="24" nzErrorTip="请输入商品名称！" nzHasFeedback>
+                <input nz-input formControlName="name" id="name" value="{{product.name}}"/>
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label [nzSm]="6" [nzXs]="24" nzFor="price" nzRequired>单价</nz-form-label>
+            <nz-form-control [nzSm]="14" [nzXs]="24" nzErrorTip="请输入商品单价，要求为数字！" nzHasFeedback>
+                <input nz-input id="price" formControlName="price" value="{{product.price}}"/>
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label [nzSm]="6" [nzXs]="24" nzFor="unit">单位</nz-form-label>
+            <nz-form-control [nzSm]="14" [nzXs]="24">
+                <input nz-input formControlName="unit" id="unit" value="{{product.unit}}"/>
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label [nzSm]="6" [nzXs]="24" nzFor="imgPath">图片路径</nz-form-label>
+            <nz-form-control [nzSm]="14" [nzXs]="24">
+                <input nz-input formControlName="imgPath" id="imgPath" value="{{product.imgPath}}"/>
+            </nz-form-control>
+        </nz-form-item>
+    </form>
+</nz-modal>

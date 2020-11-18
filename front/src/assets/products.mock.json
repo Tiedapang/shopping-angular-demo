@@ -1,0 +1,20 @@
+[{
+  "id": 1,
+  "name": "速冻水饺",
+  "imgPath": "/assets/img/cole.jpg",
+  "price": 20,
+  "unit": "包"
+},{
+  "id": 2,
+  "name": "方便面",
+  "imgPath": "/assets/img/cole.jpg",
+  "price": 20,
+  "unit": "包"
+},{
+  "id": 3,
+  "name": "可乐",
+  "imgPath": "/assets/img/cole.jpg",
+  "price": 20,
+  "unit": "听"
+}
+]

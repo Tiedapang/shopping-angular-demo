@@ -1,0 +1,41 @@
+@import "~ng-zorro-antd/ng-zorro-antd.min.css";
+.products{
+  display: flex;
+}
+.cart-img{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: auto;
+}
+.pagination{
+  position: fixed;
+  bottom: 30px;
+
+}
+.products{
+  margin-left: 40px;
+}
+.search{
+  margin: 50px 40px 0px 40px;
+
+}
+.search-search{
+  margin-left: 50px;
+}
+.proudct-table{
+  margin-left: 40px;
+}
+.proudct-table  img{
+  width: 100px;
+  height: 100px;
+}
+.product-add-button{
+  margin-top: 50px;
+  margin-left: 800px;
+
+}
+.product-opreation{
+  display: flex;
+}
